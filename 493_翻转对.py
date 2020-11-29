@@ -40,5 +40,5 @@ class Solution:
         return reversePairsRecursive(nums,0,leng-1)
 
 
-nums =[10,4,2,1,1]
+nums =[10,4,2,1,1] 
 print(Solution().reversePairs(nums))
