@@ -32,7 +32,7 @@ class Solution:
                             list1[p] = nums[j]
                             j += 1; p += 1
                 nums[l:r+1] = list1[0:r-l+1]
-                return n
+                return n 
 
         leng = len(nums)
         if leng == 0:
