@@ -26,3 +26,10 @@ class Solution:
             list1[i] = list1[i-1] + list1[i-2]
         return list1[n-1]
                                             #这个推倒公式与斐波那契数列一样，就也可以通过矩阵来求
+
+方法三：通项公式
+思路：
+f(n) 是齐次线性递推，根据递推方程 f(n) = f(n - 1) + f(n - 2)，我们可以写出这样的特征方程：x*x = x + 1
+方程的解为： f(n) = c1 * x1^n + c2 * x2^n         根据f（1）=1，f（2）=2，再求得c1和c2
+
+链接：https://leetcode-cn.com/problems/climbing-stairs/solution/pa-lou-ti-by-leetcode-solution/
