@@ -54,12 +54,12 @@ class Solution:
             if pos == len(freq) or rest < freq[pos][0]:
                 return
 
-            dfs(pos + 1, rest)
+            dfs(pos + 1, rest)                  #跳过该点（n个位置每一个都可以是0或1）
 
             most = min(rest // freq[pos][0], freq[pos][1])
             for i in range(1, most + 1):
                 sequence.append(freq[pos][0])
-                dfs(pos + 1, rest - i * freq[pos][0])
+                dfs(pos + 1, rest - i * freq[pos][0])            #用它
             sequence = sequence[:-most]       #将后边的most个数去掉      #[::-1]  表示逆转      [::-2] 从后往前一次走两部     [:-n] 开始到导数第n个数
 
         freq = sorted(collections.Counter(candidates).items())             #freq[元素][0] 该元素  freq[元素][1]  元素频率
