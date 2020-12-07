@@ -20,7 +20,7 @@ class Solution:
                 # store 4 elements in tmp
                 for k in range(4):
                     tmp[k] = matrix[row][col]
-                    row, col = col, n - 1 - row            #先存4个待旋转的值
+                    row, col = col, n - 1 - row            #----------很精髓------------#先存4个待旋转的值
                 # rotate 4 elements
                 for k in range(4):
                     matrix[row][col] = tmp[(k - 1) % 4]         #放回
