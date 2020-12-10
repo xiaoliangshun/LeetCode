@@ -21,6 +21,7 @@ class Solution:
 
     ########方法3：贪心法（也不算吧）：：我们直接看  该元素下标+该元素数值 >= len(nums)  是否成立，
     # 成立就完事；否则从该元素向右的nums[i]中找，看是否有更远的，若有将其更新，否则继续走直到走不动为止
+    #  要想走到最后中间就不可能存在去不了的地方
 
 class Solution:
     def canJump(self, nums: List[int]) -> bool:
