@@ -14,7 +14,10 @@ class Solution:
                                 num -= 1
                     leng += num
         return leng
-
+    
+    
+    ##想法：周长其实是能圈住陆地的最大长方形的周长，然后减去2*（每行和每列中不连续1的个数-1）
+    
     ## 深度优先遍历
     # 三种状态：0：水   1：陆地   2：已访问
 # class Solution {
