@@ -54,7 +54,7 @@ class Solution {
 //        people = sorted(people, key = lambda x: (-x[0], x[1]))
 //        for p in people:
 //        if len(res) <= p[1]:          #直接插入(前边都没有那么多高个子)【在此之前比他高的人都已经进来了】
-//        res.append(p)
+//        res.append(p)                     #较高的元素其实优先级更低，因为比它低的元素放在它前边或者后边都不影响它
 //        elif len(res) > p[1]:         #插队
 //        res.insert(p[1], p)
 //        return res
